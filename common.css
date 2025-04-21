@@ -1,0 +1,146 @@
+:root {
+   --primary-color: #000;
+   --secondary-color: #E4DCD6;
+   --t-color: #FF9749;
+   --text-dark: #212529;
+   --white: #ffffff;
+   --d-taxt: #FF7814;
+   --header-font-1: "Alfa Slab One", serif;
+   --header-font-2: "Bebas Neue", sans-serif;
+}
+
+body{
+   background: var(--primary-color);
+}
+
+.head{
+   margin: 0 auto;
+   background: var(--primary-color);
+   color: var(--white);
+   height: 70px ;
+   width: min(1260px,100%);
+   padding: 0 5%;
+   font-family: "Comic Neue", cursive;
+   font-weight: 300;
+   font-style: normal;
+   font-size: 20px;
+}
+.head h1, .hhead{
+   cursor: pointer;
+}
+.head h1 span, .hhead span{color: var(--t-color);}
+
+.menuCon .mlist{
+   column-gap: 1em;
+   font-weight: 400;
+   /*font-family: "Outfit", sans-serif;
+   font-optical-sizing: auto;
+   font-style: normal;*/    /*using teko-font (in globle.css)*/
+   font-size: 18px;
+   /**/
+   li{
+      cursor: pointer;
+      a:hover {
+          color: var(--d-taxt);
+      }
+   }
+}
+
+.Hbtn{
+   padding: 9px 16px;
+   margin-left: 2em;
+   background: var(--t-color);
+   border: none;
+   border-radius: 20px;
+   font-weight: 400;
+   font-size: 18px;
+   cursor: pointer;
+   
+   &:hover{
+      background: var(--d-taxt);
+   }
+}
+
+.selected{
+   position: relative;
+   display: inline-block;
+}
+.selected::after{
+   content: "";
+   position: absolute;
+   bottom: -3px;
+   left: 0;
+   width: 100%;
+   height: 3px;
+   background: var(--d-taxt);
+}
+
+@media (max-width: 767px) {
+   .ri-menu-fill {
+      font-size: 30px;
+      color: var(--t-color);
+      cursor: pointer;
+   }
+   .menuCon{
+      position: absolute;
+      top: 0;
+      left: -100%;
+      height: 100dvh;
+      width: 100vw;
+   }
+   .show{
+      left: 0;
+   }
+   .navBar{
+      flex: 0 0 290px;
+      height: 100%;
+      background: #121212;
+      flex-direction: column;
+      justify-content: center;
+   }
+   .mlist{
+      flex-direction: column;
+      row-gap: 0.4rem;
+      
+      li a{
+         font-size: 25px;
+      }
+   }
+   .clossdiv{
+      flex: 0 1 calc(100% - 290px);
+      height: 100%;
+      background: transparent;
+      backdrop-filter: blur(2px) ;
+   }
+   .Hbtn{
+      margin: 1rem 0 0 0 ;
+   }
+   .hhead{
+      font-family: "Comic Neue", cursive;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 30px;
+      /*position: absolute;
+      top: 6rem;*/
+      margin-bottom: 10dvh;
+   }
+}
+
+@media (min-width : 400px) and (max-width: 767px) {
+   .navBar{
+      flex: 0 0 55%;
+   }
+   .clossdiv{
+      flex: 0 1 45%;
+   }
+}
+
+@media (min-width : 768px) {
+   .ri-menu-fill{
+      display: none;
+   }
+   
+   .mlist h1{display: none;}
+   
+}
+

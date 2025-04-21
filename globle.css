@@ -1,0 +1,35 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.w1{
+   width: 100vw;
+}
+.w2{
+   width: 100%;
+}
+
+.f1{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+
+/*list*/
+.u1{
+   list-style: none;
+}
+.u1 li a{
+   text-decoration: none;
+   color: white;
+}
+
+/**/
+.teko-font{
+   font-family: "Teko", sans-serif;
+   font-optical-sizing: auto;
+   font-style: normal;
+}
