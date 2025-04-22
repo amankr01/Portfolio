@@ -16,9 +16,9 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 - HTML5
 - CSS3
 - JavaScript
-- [Add any frameworks or libraries, e.g., React, Tailwind CSS, Bootstrap, etc.]
 
 ## Live Demo
 
-Check out the live version of my portfolio here: [Your Live URL]  
-(Replace this with your actual deployed website link)
+Check out the live version of my portfolio here:
+[![Live Demo](https://img.shields.io/badge/Portfolio%20Now-Live-green?style=for-the-badge)](#)
+
