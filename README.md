@@ -20,5 +20,5 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 ## Live Demo
 
 Check out the live version of my portfolio here:
-[![Live Demo](https://img.shields.io/badge/Portfolio%20Now-Live-green?style=for-the-badge)](#)
+[![Live Demo](https://img.shields.io/badge/Portfolio%20Now-Live-green?style=for-the-badge)](https://amankr01.github.io/Portfolio/)
 
