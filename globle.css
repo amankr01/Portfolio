@@ -17,7 +17,6 @@
    justify-content: space-between;
 }
 
-
 /*list*/
 .u1{
    list-style: none;
@@ -27,9 +26,20 @@
    color: white;
 }
 
-/**/
-.teko-font{
-   font-family: "Teko", sans-serif;
-   font-optical-sizing: auto;
-   font-style: normal;
+
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap');
+
+.font{
+   font-family: "Comic Neue", cursive;
+      font-weight: 700;
+      font-style: normal;
+}
+
+
+.font1{
+   font-family: "Cascadia Code", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }

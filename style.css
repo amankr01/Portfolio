@@ -1,0 +1,136 @@
+:root{
+   --primary-color: #141414;
+   --secondary-color: #1F1F1F;
+   --t-color: #CC6BFF;
+   --d-taxt: #B553E2 ;
+   --text-dark: #212529;
+   --white: #ffffff;
+}
+
+body{
+   background: var(--primary-color);
+}
+
+header{
+   height: 50px;
+   width: min(1250px,100%);
+   background: var(--primary-color); 
+   color: var(--t-color);
+   padding: 0 5%;
+   margin: 0 auto;
+   font-size: 20px;
+   position: fixed;
+   top: 0;
+   right: 0;
+}
+header .h-text span{
+   color: var(--white);
+}
+
+header div .micon{font-size: 30px;}
+.mlist li a, .mlist button {
+   font-size: 18px;
+}
+.mlist li a:hover{
+   color: var(--d-taxt);
+}
+.mlist button{
+   background: var(--t-color);
+   border: 3px solid #B321FF;
+   border-radius: 20px;
+   padding: 8px 14px;
+   color: white;
+}
+.mlist button:hover{
+   background: var(--d-taxt);
+   border-color: #AC0EFE ;
+}
+
+.selected{
+   position: relative;
+   display: inline-block ;
+}
+.selected::after{
+   content: "";
+   position: absolute;
+   bottom: -4px;
+   left: 0;
+   width: 100%;
+   height: 3px;
+   background: var(--t-color);
+}
+
+.u1 .selected a {
+   color: var(--t-color);
+}
+.u1 li.selected a:hover {
+   color: var(--t-color);
+}
+/*////////////////////////////////////////////////*/
+@media (max-width: 767px) {
+   .menuCon{
+      height: 100dvh;
+      width: 100vw;
+      position: absolute;
+      top: 0;
+      right: -100%;
+      display: flex;
+      justify-content: space-between;
+      transition:  0.3s right ;
+   }
+   .navBar , .closeBox{
+      height: 100%;
+   }
+   .navBar{
+      flex: 0 0 290px;
+      background: var(--secondary-color);
+   }
+   .closeBox{
+      flex: 0 0 calc(100% - 290px);
+      background: transparent;
+      backdrop-filter: blur(2.5px);
+   }
+   .show{
+      right: 0;
+   }
+   .mClose{
+      position: absolute;
+      top: 0;
+      right: 5%;
+      height: 50px;
+   }
+   .mlist{
+      margin: 100px auto 0  auto ; flex-direction: column; gap: 10px;  }
+   .mlist h1{
+      margin-bottom: 40px;
+   }
+   .mlist button{
+      margin-top: 20px;
+   }
+}
+/*///////////////////////////////////////////////////*/
+@media (min-width : 768px) {
+   .mOpen , .closeBox, .mClose, .mhead{
+      display: none;
+   }
+   .mlist{
+     gap: 10px;  
+   }
+   .mlist button {
+      margin-left: 15px;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
